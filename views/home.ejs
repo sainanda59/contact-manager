@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/home.css">
+    <script src="https://kit.fontawesome.com/580655f985.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <h1 class="title"> <i class="fas fa-address-book"></i> Contact Manager</h1>
+    <div class="contacts">
+        <%for(let i of contacts){%>
+            <div class="contact">
+                
+                    <div class="display_mob"><%=i.mob%></div>
+                    <div class="display_name"><%=i.name%></div>
+                     <!-- using params "/deleteContact/<%=i.mob%>" -->
+                     <a href="/deleteContact/?id=<%=i._id%>"><button class="delete_btn"><i class="fas fa-user-minus"></a></i></button></a>
+                
+            </div>
+        <%}%>
+    </div>
+
+    <div class="inputForm">
+           <form action="/newContact" method="post">
+               <input placeholder="Name" type="text" name="name" id="name" required>
+               <input placeholder="Mobile Number" type="number" name="mob" id="mob" required>
+               <button type="submit" id="btn">Add Contact</button>
+           </form>
+    </div>
+
+    <script src="/js/home.js"></script>
+</body>
+</html>

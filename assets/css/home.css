@@ -1,0 +1,60 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: wheat;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    color: black;
+}
+
+.title{
+    font-size: 50px;
+    text-align: center;
+}
+.contacts{
+    height: auto;
+    width: 50vw;
+    margin-left: 35vw;
+}
+.contact{
+    height: 10vh;
+    width: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.display_mob{
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+.display_name{
+    margin-left: 50px;
+    font-family: sans-serif;
+    font-weight: 700;
+}
+
+
+
+.inputForm{
+  margin-left: 35vw;
+}
+
+#name,#mob{
+    width: 150px;
+    height: 30px;
+}
+#btn{
+    width: 150px;
+    height: 36px;
+
+}
+
+.delete_btn{
+    padding: 15px;
+    border-radius: 50px;
+}
