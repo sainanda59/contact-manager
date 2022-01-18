@@ -27,8 +27,6 @@ var contacts = [
     }
 ]
 
-app.get('/favicon.ico', (req, res) => res.status(204));
-
 app.get('/',(req,res)=>{
 
     Contact.find({},(err,contactsList)=>{
